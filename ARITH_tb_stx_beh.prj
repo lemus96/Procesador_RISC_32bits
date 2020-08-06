@@ -1,0 +1,4 @@
+vhdl isim_temp "FA.vhd"
+vhdl isim_temp "ADDR_32.vhd"
+vhdl isim_temp "ARITH.vhd"
+vhdl isim_temp "ARITH_tb.vhd"

@@ -1,0 +1,4 @@
+vhdl work "FA.vhd"
+vhdl work "NOR_32.vhd"
+vhdl work "ADDR_32.vhd"
+vhdl work "ARITH.vhd"

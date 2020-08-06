@@ -1,0 +1,4 @@
+work	"ADDR_32.vhd"
+work	"FA.vhd"
+work	"PC.vhd"
+work	"REG_D_32.vhd"

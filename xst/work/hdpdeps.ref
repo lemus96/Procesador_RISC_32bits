@@ -1,0 +1,124 @@
+V3 69
+FL "C:/Documents and Settings/Procesador_RISC_32bits/ADDR_32.vhd" 2020/07/28.01:47:04 P.68d
+EN work/ADDR_32 1596675752 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/ADDR_32.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/ADDR_32/Behavioral 1596675753 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/ADDR_32.vhd" \
+      EN work/ADDR_32 1596675752 CP FA
+FL "C:/Documents and Settings/Procesador_RISC_32bits/ALU.vhd" 2020/07/28.01:48:15 P.68d
+EN work/ALU 1596675778 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/ALU.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/ALU/Behavioral 1596675779 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/ALU.vhd" EN work/ALU 1596675778 \
+      CP SHIFT CP BOOL CP ARITH CP CMP
+FL "C:/Documents and Settings/Procesador_RISC_32bits/alu_fa.vhd" 2020/07/12.04:43:41 P.68d
+EN work/alu_fa 1594521828 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/alu_fa.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/alu_fa/Behavioral 1594521829 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/alu_fa.vhd" \
+      EN work/alu_fa 1594521828
+FL "C:/Documents and Settings/Procesador_RISC_32bits/ARITH.vhd" 2020/07/28.02:31:36 P.68d
+EN work/ARITH 1596675762 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/ARITH.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/ARITH/Behavioral 1596675763 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/ARITH.vhd" \
+      EN work/ARITH 1596675762 CP ADDR_32 CP NOR_32
+FL "C:/Documents and Settings/Procesador_RISC_32bits/BOOL.vhd" 2020/07/28.01:45:41 P.68d
+EN work/BOOL 1596675760 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/BOOL.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/BOOL/Behavioral 1596675761 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/BOOL.vhd" EN work/BOOL 1596675760 \
+      CP MUX_4
+FL "C:/Documents and Settings/Procesador_RISC_32bits/CMP.vhd" 2020/07/21.06:42:53 P.68d
+EN work/CMP 1596675764 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/CMP.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/CMP/Behavioral 1596675765 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/CMP.vhd" EN work/CMP 1596675764
+FL "C:/Documents and Settings/Procesador_RISC_32bits/CTL.vhd" 2020/07/24.23:38:18 P.68d
+EN work/CTL 1596675776 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/CTL.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/CTL/Behavioral 1596675777 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/CTL.vhd" EN work/CTL 1596675776 \
+      CP ROM
+FL "C:/Documents and Settings/Procesador_RISC_32bits/FA.vhd" 2020/07/16.05:27:28 P.68d
+EN work/FA 1596675750 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/FA.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/FA/Behavioral 1596675751 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/FA.vhd" EN work/FA 1596675750
+FL "C:/Documents and Settings/Procesador_RISC_32bits/MUX_2_32.vhd" 2020/07/28.03:00:31 P.68d
+EN work/MUX_2_32 1595899679 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/MUX_2_32.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/MUX_2_32/Behavioral 1595899680 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/MUX_2_32.vhd" \
+      EN work/MUX_2_32 1595899679
+FL "C:/Documents and Settings/Procesador_RISC_32bits/MUX_4.vhd" 2020/07/20.03:17:42 P.68d
+EN work/MUX_4 1596675756 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/MUX_4.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/MUX_4/Behavioral 1596675757 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/MUX_4.vhd" \
+      EN work/MUX_4 1596675756
+FL "C:/Documents and Settings/Procesador_RISC_32bits/NOR_32.vhd" 2020/07/28.02:21:57 P.68d
+EN work/NOR_32 1596675754 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/NOR_32.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/NOR_32/Behavioral 1596675755 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/NOR_32.vhd" \
+      EN work/NOR_32 1596675754
+FL "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd" 2020/08/05.04:25:49 P.68d
+EN work/PC 1596675772 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/PC/Behavioral 1596675773 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd" EN work/PC 1596675772 \
+      CP REG_D_32 CP ADDR_32
+FL "C:/Documents and Settings/Procesador_RISC_32bits/RAM_REGS.vhd" 2020/07/23.02:18:51 P.68d
+EN work/RAM_REGS 1596675768 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/RAM_REGS.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/RAM_REGS/Behavioral 1596675769 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/RAM_REGS.vhd" \
+      EN work/RAM_REGS 1596675768
+FL "C:/Documents and Settings/Procesador_RISC_32bits/REGFILE.vhd" 2020/07/23.02:45:33 P.68d
+EN work/REGFILE 1596675774 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/REGFILE.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/REGFILE/Behavioral 1596675775 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/REGFILE.vhd" \
+      EN work/REGFILE 1596675774 CP RAM_REGS
+FL "C:/Documents and Settings/Procesador_RISC_32bits/REG_D_32.vhd" 2020/07/26.18:36:17 P.68d
+EN work/REG_D_32 1596675770 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/REG_D_32.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/REG_D_32/Behavioral 1596675771 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/REG_D_32.vhd" \
+      EN work/REG_D_32 1596675770
+FL "C:/Documents and Settings/Procesador_RISC_32bits/ROM.vhd" 2020/07/24.19:09:46 P.68d
+EN work/ROM 1596675766 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/ROM.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/ROM/Behavioral 1596675767 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/ROM.vhd" EN work/ROM 1596675766
+FL "C:/Documents and Settings/Procesador_RISC_32bits/SHIFT.vhd" 2020/07/22.05:55:48 P.68d
+EN work/SHIFT 1596675758 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/SHIFT.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/SHIFT/Behavioral 1596675759 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/SHIFT.vhd" \
+      EN work/SHIFT 1596675758
+FL "C:/Documents and Settings/Procesador_RISC_32bits/TOP.vhd" 2020/07/28.03:29:35 P.68d
+EN work/TOP 1596675780 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/TOP.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/TOP/Behavioral 1596675781 \
+      FL "C:/Documents and Settings/Procesador_RISC_32bits/TOP.vhd" EN work/TOP 1596675780 \
+      CP PC CP REGFILE CP CTL CP ALU CP NOR_32

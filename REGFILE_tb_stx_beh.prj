@@ -1,0 +1,3 @@
+vhdl isim_temp "RAM_REGS.vhd"
+vhdl isim_temp "REGFILE.vhd"
+vhdl isim_temp "REGFILE_tb.vhd"

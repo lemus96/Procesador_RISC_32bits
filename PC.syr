@@ -1,0 +1,501 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: PC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PC.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PC"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : PC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/FA.vhd" in Library work.
+Architecture behavioral of Entity fa is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/REG_D_32.vhd" in Library work.
+Architecture behavioral of Entity reg_d_32 is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/ADDR_32.vhd" in Library work.
+Architecture behavioral of Entity addr_32 is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REG_D_32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADDR_32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd" line 64: Unconnected output port 'COUT' of component 'ADDR_32'.
+WARNING:Xst:753 - "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd" line 75: Unconnected output port 'COUT' of component 'ADDR_32'.
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <REG_D_32> in library <work> (Architecture <behavioral>).
+Entity <REG_D_32> analyzed. Unit <REG_D_32> generated.
+
+Analyzing Entity <ADDR_32> in library <work> (Architecture <behavioral>).
+Entity <ADDR_32> analyzed. Unit <ADDR_32> generated.
+
+Analyzing Entity <FA> in library <work> (Architecture <behavioral>).
+Entity <FA> analyzed. Unit <FA> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <REG_D_32>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/REG_D_32.vhd".
+    Found 32-bit register for signal <Q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <REG_D_32> synthesized.
+
+
+Synthesizing Unit <FA>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/FA.vhd".
+Unit <FA> synthesized.
+
+
+Synthesizing Unit <ADDR_32>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/ADDR_32.vhd".
+Unit <ADDR_32> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd".
+WARNING:Xst:646 - Signal <pc_16<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cout2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cout1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit 4-to-1 multiplexer for signal <mux4_out>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <PC> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 32-bit register                                       : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <cascade[31].Full_Adder_i> is unconnected in block <ADDR_32_1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <cascade[31].Full_Adder_i> is unconnected in block <ADDR_32_2>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PC> ...
+
+Optimizing unit <REG_D_32> ...
+
+Optimizing unit <ADDR_32> ...
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <REG_D_32_0/Q_1> (without init value) has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_D_32_0/Q_0> (without init value) has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PC, actual ratio is 2.
+Replicating register REG_D_32_0/Q_31 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_30 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_29 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_28 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_27 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_26 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_25 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_24 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_23 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_22 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_21 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_20 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_19 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_18 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_17 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_16 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_15 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_14 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_13 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_12 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_11 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_10 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_9 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_8 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_7 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_6 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_5 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_4 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_3 to handle IOB=TRUE attribute
+Replicating register REG_D_32_0/Q_2 to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 60
+ Flip-Flops                                            : 60
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PC.ngr
+Top Level Output File Name         : PC
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 147
+
+Cell Usage :
+# BELS                             : 301
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 16
+#      LUT2_D                      : 2
+#      LUT2_L                      : 2
+#      LUT3                        : 46
+#      LUT3_D                      : 5
+#      LUT3_L                      : 1
+#      LUT4                        : 172
+#      LUT4_D                      : 9
+#      LUT4_L                      : 12
+#      MUXF5                       : 34
+# FlipFlops/Latches                : 60
+#      FD                          : 56
+#      FDRS                        : 2
+#      FDS                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 146
+#      IBUF                        : 50
+#      OBUF                        : 96
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      139  out of   4656     2%  
+ Number of Slice Flip Flops:             30  out of   9312     0%  
+ Number of 4 input LUTs:                266  out of   9312     2%  
+ Number of IOs:                         147
+ Number of bonded IOBs:                 147  out of    232    63%  
+    IOB Flip Flops:                      30
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 60    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.878ns (Maximum Frequency: 77.652MHz)
+   Minimum input arrival time before clock: 12.880ns
+   Maximum output required time after clock: 16.293ns
+   Maximum combinational path delay: 16.295ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.878ns (frequency: 77.652MHz)
+  Total number of paths / destination ports: 23580 / 62
+-------------------------------------------------------------------------
+Delay:               12.878ns (Levels of Logic = 9)
+  Source:            REG_D_32_0/Q_6_1 (FF)
+  Destination:       REG_D_32_0/Q_29 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: REG_D_32_0/Q_6_1 to REG_D_32_0/Q_29
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.591   1.021  REG_D_32_0/Q_6_1 (REG_D_32_0/Q_6_1)
+     LUT4:I3->O            2   0.704   0.482  ADDR_32_1/cascade[11].Full_Adder_i/COUT1_SW1 (N258)
+     LUT4:I2->O           16   0.704   1.038  ADDR_32_1/cascade[13].Full_Adder_i/COUT1 (ADDR_32_1/int_c<13>)
+     LUT4:I3->O           14   0.704   1.079  ADDR_32_1/cascade[18].Full_Adder_i/S1 (PC_INC_18_OBUF)
+     LUT3:I1->O            1   0.704   0.455  ADDR_32_2/cascade[20].Full_Adder_i/COUT1_SW0_SW0 (N180)
+     LUT3:I2->O            6   0.704   0.673  ADDR_32_2/cascade[18].Full_Adder_i/COUT1_SW0 (N171)
+     LUT4:I3->O            1   0.704   0.000  ADDR_32_2/cascade[22].Full_Adder_i/COUT1_F (N394)
+     MUXF5:I0->O           7   0.321   0.708  ADDR_32_2/cascade[22].Full_Adder_i/COUT1 (ADDR_32_2/int_c<22>)
+     MUXF5:S->O            3   0.739   0.535  ADDR_32_2/cascade[28].Full_Adder_i/COUT1 (ADDR_32_2/int_c<28>)
+     LUT4:I3->O            2   0.704   0.000  d<29> (d<29>)
+     FD:D                      0.308          REG_D_32_0/Q_29
+    ----------------------------------------
+    Total                     12.878ns (6.887ns logic, 5.991ns route)
+                                       (53.5% logic, 46.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2820 / 66
+-------------------------------------------------------------------------
+Offset:              12.880ns (Levels of Logic = 10)
+  Source:            ID<0> (PAD)
+  Destination:       REG_D_32_0/Q_29 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ID<0> to REG_D_32_0/Q_29
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  ID_0_IBUF (ID_0_IBUF)
+     LUT4:I0->O            2   0.704   0.526  ADDR_32_2/cascade[3].Full_Adder_i/COUT1 (ADDR_32_2/int_c<3>)
+     LUT3_D:I1->LO         1   0.704   0.135  ADDR_32_2/cascade[4].Full_Adder_i/COUT1 (N455)
+     LUT3:I2->O            3   0.704   0.566  ADDR_32_2/cascade[5].Full_Adder_i/COUT1 (ADDR_32_2/int_c<5>)
+     LUT3_D:I2->LO         1   0.704   0.135  ADDR_32_2/cascade[7].Full_Adder_i/COUT1 (N461)
+     LUT3:I2->O            6   0.704   0.704  ADDR_32_2/cascade[9].Full_Adder_i/COUT1 (ADDR_32_2/int_c<9>)
+     LUT3:I2->O           11   0.704   0.933  ADDR_32_2/cascade[13].Full_Adder_i/COUT1 (ADDR_32_2/int_c<13>)
+     MUXF5:S->O            7   0.739   0.708  ADDR_32_2/cascade[22].Full_Adder_i/COUT1 (ADDR_32_2/int_c<22>)
+     MUXF5:S->O            3   0.739   0.535  ADDR_32_2/cascade[28].Full_Adder_i/COUT1 (ADDR_32_2/int_c<28>)
+     LUT4:I3->O            2   0.704   0.000  d<29> (d<29>)
+     FD:D                      0.308          REG_D_32_0/Q_29
+    ----------------------------------------
+    Total                     12.880ns (7.932ns logic, 4.948ns route)
+                                       (61.6% logic, 38.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10715 / 90
+-------------------------------------------------------------------------
+Offset:              16.293ns (Levels of Logic = 10)
+  Source:            REG_D_32_0/Q_6_1 (FF)
+  Destination:       PC_OFFSET<30> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: REG_D_32_0/Q_6_1 to PC_OFFSET<30>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.591   1.021  REG_D_32_0/Q_6_1 (REG_D_32_0/Q_6_1)
+     LUT4:I3->O            2   0.704   0.482  ADDR_32_1/cascade[11].Full_Adder_i/COUT1_SW1 (N258)
+     LUT4:I2->O           16   0.704   1.038  ADDR_32_1/cascade[13].Full_Adder_i/COUT1 (ADDR_32_1/int_c<13>)
+     LUT4:I3->O           14   0.704   1.079  ADDR_32_1/cascade[18].Full_Adder_i/S1 (PC_INC_18_OBUF)
+     LUT3:I1->O            1   0.704   0.455  ADDR_32_2/cascade[20].Full_Adder_i/COUT1_SW0_SW0 (N180)
+     LUT3:I2->O            6   0.704   0.673  ADDR_32_2/cascade[18].Full_Adder_i/COUT1_SW0 (N171)
+     LUT4:I3->O            1   0.704   0.000  ADDR_32_2/cascade[22].Full_Adder_i/COUT1_F (N394)
+     MUXF5:I0->O           7   0.321   0.708  ADDR_32_2/cascade[22].Full_Adder_i/COUT1 (ADDR_32_2/int_c<22>)
+     MUXF5:S->O            3   0.739   0.566  ADDR_32_2/cascade[28].Full_Adder_i/COUT1 (ADDR_32_2/int_c<28>)
+     LUT3:I2->O            1   0.704   0.420  ADDR_32_2/cascade[29].Full_Adder_i/S1 (PC_OFFSET_29_OBUF)
+     OBUF:I->O                 3.272          PC_OFFSET_29_OBUF (PC_OFFSET<29>)
+    ----------------------------------------
+    Total                     16.293ns (9.851ns logic, 6.442ns route)
+                                       (60.5% logic, 39.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1040 / 29
+-------------------------------------------------------------------------
+Delay:               16.295ns (Levels of Logic = 11)
+  Source:            ID<0> (PAD)
+  Destination:       PC_OFFSET<30> (PAD)
+
+  Data Path: ID<0> to PC_OFFSET<30>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  ID_0_IBUF (ID_0_IBUF)
+     LUT4:I0->O            2   0.704   0.526  ADDR_32_2/cascade[3].Full_Adder_i/COUT1 (ADDR_32_2/int_c<3>)
+     LUT3_D:I1->LO         1   0.704   0.135  ADDR_32_2/cascade[4].Full_Adder_i/COUT1 (N455)
+     LUT3:I2->O            3   0.704   0.566  ADDR_32_2/cascade[5].Full_Adder_i/COUT1 (ADDR_32_2/int_c<5>)
+     LUT3_D:I2->LO         1   0.704   0.135  ADDR_32_2/cascade[7].Full_Adder_i/COUT1 (N461)
+     LUT3:I2->O            6   0.704   0.704  ADDR_32_2/cascade[9].Full_Adder_i/COUT1 (ADDR_32_2/int_c<9>)
+     LUT3:I2->O           11   0.704   0.933  ADDR_32_2/cascade[13].Full_Adder_i/COUT1 (ADDR_32_2/int_c<13>)
+     MUXF5:S->O            7   0.739   0.708  ADDR_32_2/cascade[22].Full_Adder_i/COUT1 (ADDR_32_2/int_c<22>)
+     MUXF5:S->O            3   0.739   0.566  ADDR_32_2/cascade[28].Full_Adder_i/COUT1 (ADDR_32_2/int_c<28>)
+     LUT3:I2->O            1   0.704   0.420  ADDR_32_2/cascade[29].Full_Adder_i/S1 (PC_OFFSET_29_OBUF)
+     OBUF:I->O                 3.272          PC_OFFSET_29_OBUF (PC_OFFSET<29>)
+    ----------------------------------------
+    Total                     16.295ns (10.896ns logic, 5.399ns route)
+                                       (66.9% logic, 33.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.44 secs
+ 
+--> 
+
+Total memory usage is 154708 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

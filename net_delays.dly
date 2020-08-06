@@ -1,0 +1,288 @@
+Release 14.6 - reportgen P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Aug 05 04:42:38 2020
+
+File: C:/DOCUME~1/Lemus/CONFIG~1/Temp/xil_1732_37.dly
+
+ The 20 worst nets by delay are:
++-----------------+-----------+
+| Max Delay       | Netname   |
++-----------------+-----------+
+   2.466            OP_5_IBUF
+   2.326            OP_4_IBUF
+   2.189            OP_3_IBUF
+   2.131            OP_0_IBUF
+   2.046            PCSEL_2_OBUF
+   1.571            OP_1_IBUF
+   1.337            OP_2_IBUF
+   1.055            N11
+   0.853            WASEL_OBUF
+   0.823            ALUFN_3_OBUF
+   0.796            PCSEL_0_OBUF
+   0.790            ALUFN_1_OBUF
+   0.646            ROM_64x18/Mrom_DATA1
+   0.642            Z_IBUF
+   0.586            ALUFN_0_OBUF
+   0.586            WDSEL_1_OBUF
+   0.586            ALUFN_2_OBUF
+   0.576            control
+   0.476            N34
+   0.376            RESET_IBUF
+---------------------------------
+
+-------------------------------------------------------------------------------
+                               Net Delays
+-------------------------------------------------------------------------------
+
+ALUFN_0_OBUF
+   ALUFN_0_OBUF.X
+         0.586  ALUFN<0>.O1
+
+ALUFN_1_OBUF
+   ALUFN_1_OBUF.X
+         0.790  ALUFN<1>.O1
+
+ALUFN_2_OBUF
+   ALUFN_2_OBUF.X
+         0.586  ALUFN<2>.O1
+
+ALUFN_3_OBUF
+   ALUFN_3_OBUF.X
+         0.823  ALUFN<3>.O1
+
+ALUFN_4_OBUF
+   ALUFN_4_OBUF.X
+         0.291  ALUFN<4>.O1
+
+ALUFN_5_OBUF
+   ALUFN_5_OBUF.Y
+         0.291  ALUFN<5>.O1
+
+ASEL_OBUF
+   ASEL_OBUF.X
+         0.291  ASEL.O1
+
+BSEL_OBUF
+   BSEL_OBUF.X
+         0.291  BSEL.O1
+
+MOE_OBUF
+   WDSEL_1_OBUF.Y
+         0.322  MOE.O1
+         0.044  WDSEL_1_OBUF.F2
+
+MWR_OBUF
+   MWR_OBUF.X
+         0.291  MWR.O1
+
+N11
+   ASEL_OBUF.Y
+         1.055  ALUFN_1_OBUF.G1
+         0.711  ALUFN_3_OBUF.G1
+         0.024  ASEL_OBUF.F1
+         0.711  ALUFN_5_OBUF.G3
+
+N25
+   N25.X
+         0.122  WDSEL_1_OBUF.G4
+
+N34
+   control.Y
+         0.476  control.F4
+
+N39
+   N25.Y
+         0.337  PCSEL_1_OBUF.G4
+
+OP_0_IBUF
+   OP<0>.I
+         0.465  ALUFN_0_OBUF.F3
+         0.571  ALUFN_2_OBUF.F4
+         0.957  ALUFN_1_OBUF.F3
+         2.131  BSEL_OBUF.F4
+         1.282  WDSEL_0_OBUF.F4
+         0.908  ALUFN_3_OBUF.F4
+         0.649  ALUFN_4_OBUF.F4
+         1.916  PCSEL<1>15.F4
+         1.867  d<3>.F4
+         1.901  d<3>.G1
+         1.579  N25.F3
+         1.584  N25.G2
+         1.571  ASEL_OBUF.G1
+         1.483  control.F3
+         1.746  WERF_OBUF.G4
+
+OP_1_IBUF
+   OP<1>.I
+         0.741  ALUFN_0_OBUF.F2
+         0.518  ALUFN_2_OBUF.F3
+         0.737  ALUFN_1_OBUF.F2
+         0.966  BSEL_OBUF.F3
+         0.966  BSEL_OBUF.G3
+         1.473  WDSEL_0_OBUF.F3
+         1.513  WDSEL_0_OBUF.G3
+         0.815  ALUFN_3_OBUF.F3
+         0.469  ALUFN_4_OBUF.F1
+         0.503  ALUFN_4_OBUF.G1
+         0.954  PCSEL<1>15.F3
+         0.954  PCSEL<1>15.G1
+         1.032  d<3>.F2
+         1.008  d<3>.G2
+         1.228  N25.F2
+         1.571  N25.G3
+         0.962  ASEL_OBUF.G2
+         1.282  control.G3
+         1.034  WERF_OBUF.G2
+
+OP_2_IBUF
+   OP<2>.I
+         1.055  ALUFN_0_OBUF.F1
+         1.112  ALUFN_2_OBUF.F2
+         0.845  ALUFN_1_OBUF.F4
+         1.337  BSEL_OBUF.BX
+         0.699  WDSEL_0_OBUF.BX
+         0.749  ALUFN_3_OBUF.F2
+         1.016  ALUFN_4_OBUF.F2
+         1.019  ALUFN_4_OBUF.G4
+         0.440  PCSEL<1>15.F2
+         0.501  PCSEL<1>15.G3
+         0.573  d<3>.F3
+         1.200  N25.F1
+         1.240  N25.G1
+         0.778  ASEL_OBUF.G3
+         0.871  control.G4
+         1.276  WERF_OBUF.G1
+
+OP_3_IBUF
+   OP<3>.I
+         0.660  ALUFN_0_OBUF.F4
+         0.978  ALUFN_2_OBUF.F1
+         0.962  ALUFN_1_OBUF.F1
+         1.027  ALUFN_1_OBUF.G2
+         2.185  BSEL_OBUF.G1
+         1.628  WDSEL_0_OBUF.G4
+         1.095  ALUFN_3_OBUF.F1
+         1.479  ALUFN_3_OBUF.G2
+         1.111  ALUFN_4_OBUF.F3
+         1.309  ALUFN_4_OBUF.G2
+         1.642  PCSEL<1>15.F1
+         1.647  PCSEL<1>15.G2
+         1.546  d<3>.F1
+         1.549  d<3>.G3
+         2.104  WDSEL_1_OBUF.G3
+         2.110  ASEL_OBUF.F2
+         1.706  ALUFN_5_OBUF.G2
+         1.647  PCSEL_1_OBUF.G2
+         1.829  control.G2
+         2.189  WERF_OBUF.G3
+
+OP_4_IBUF
+   OP<4>.I
+         1.781  ALUFN_1_OBUF.G3
+         1.775  BSEL_OBUF.F2
+         1.840  BSEL_OBUF.G2
+         2.326  ALUFN_3_OBUF.G3
+         1.851  ALUFN_4_OBUF.G3
+         1.747  d<3>.G4
+         1.382  WDSEL_1_OBUF.G2
+         1.350  ASEL_OBUF.F3
+         2.326  ALUFN_5_OBUF.G4
+         1.385  PCSEL_1_OBUF.G3
+         1.074  control.G1
+         0.970  MWR_OBUF.G1
+         1.352  WERF_OBUF.F2
+
+OP_5_IBUF
+   OP<5>.I
+         2.444  ALUFN_0_OBUF.BX
+         2.090  ALUFN_2_OBUF.BX
+         1.912  ALUFN_1_OBUF.BX
+         0.763  BSEL_OBUF.F1
+         0.803  BSEL_OBUF.G4
+         1.281  WDSEL_0_OBUF.F2
+         1.281  WDSEL_0_OBUF.G1
+         2.329  ALUFN_3_OBUF.BX
+         2.466  ALUFN_4_OBUF.BX
+         1.831  PCSEL<1>15.BX
+         2.207  d<3>.BX
+         1.075  WDSEL_1_OBUF.G1
+         1.382  ASEL_OBUF.F4
+         2.383  ALUFN_5_OBUF.G1
+         1.271  PCSEL_1_OBUF.G1
+         0.986  control.F2
+         0.563  MWR_OBUF.G2
+         1.259  WERF_OBUF.F4
+
+PCSEL<1>15
+   PCSEL<1>15.X
+         0.072  PCSEL_1_OBUF.F3
+
+PCSEL<1>38
+   PCSEL_1_OBUF.Y
+         0.023  PCSEL_1_OBUF.F4
+
+PCSEL_0_OBUF
+   PCSEL_0_OBUF.X
+         0.796  PCSEL<0>.O1
+
+PCSEL_1_OBUF
+   PCSEL_1_OBUF.X
+         0.301  PCSEL<1>.O1
+
+PCSEL_2_OBUF
+   IRQ.I
+         0.511  PCSEL<2>.O1
+         1.611  WDSEL_0_OBUF.F1
+         1.676  WDSEL_0_OBUF.G2
+         2.005  PCSEL_0_OBUF.F1
+         2.046  PCSEL_0_OBUF.G1
+         1.428  WDSEL_1_OBUF.F1
+         1.685  PCSEL_1_OBUF.F2
+         0.940  MWR_OBUF.F3
+         1.447  WERF_OBUF.F1
+
+RA2SEL_OBUF
+   MWR_OBUF.Y
+         0.312  RA2SEL.O1
+         0.045  MWR_OBUF.F1
+
+RESET_IBUF
+   RESET.I
+         0.376  MWR_OBUF.F2
+
+ROM_64x18/Mrom_DATA1
+   WERF_OBUF.Y
+         0.646  MWR_OBUF.G3
+         0.048  WERF_OBUF.F3
+
+WASEL_OBUF
+   PCSEL_0_OBUF.Y
+         0.853  WASEL.O1
+
+WDSEL_0_OBUF
+   WDSEL_0_OBUF.X
+         0.291  WDSEL<0>.O1
+
+WDSEL_1_OBUF
+   WDSEL_1_OBUF.X
+         0.586  WDSEL<1>.O1
+
+WERF_OBUF
+   WERF_OBUF.X
+         0.301  WERF.O1
+
+Z_IBUF
+   Z.I
+         0.642  control.F1
+
+control
+   control.X
+         0.576  PCSEL_0_OBUF.F2
+         0.282  PCSEL_1_OBUF.F1
+
+d<3>
+   d<3>.X
+         0.120  PCSEL_0_OBUF.F3
+         0.096  PCSEL_0_OBUF.G2
+

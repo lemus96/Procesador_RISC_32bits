@@ -1,0 +1,28 @@
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Documents and Settings/Procesador_RISC_32bits/ARITH_tb_isim_beh.exe -prj C:/Documents and Settings/Procesador_RISC_32bits/ARITH_tb_beh.prj work.ARITH_tb 
+ISim P.68d (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/Procesador_RISC_32bits/FA.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Procesador_RISC_32bits/NOR_32.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Procesador_RISC_32bits/ADDR_32.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Procesador_RISC_32bits/ARITH.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Procesador_RISC_32bits/ARITH_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 79160 KB
+Fuse CPU Usage: 240 ms
+Compiling package standard
+Compiling package textio
+Compiling package std_logic_1164
+Compiling package std_logic_textio
+Compiling architecture behavioral of entity FA [fa_default]
+Compiling architecture behavioral of entity ADDR_32 [addr_32_default]
+Compiling architecture behavioral of entity NOR_32 [nor_32_default]
+Compiling architecture behavioral of entity ARITH [arith_default]
+Compiling architecture behavior of entity arith_tb
+Time Resolution for simulation is 1ps.
+Compiled 13 VHDL Units
+Built simulation executable C:/Documents and Settings/Procesador_RISC_32bits/ARITH_tb_isim_beh.exe
+Fuse Memory Usage: 91324 KB
+Fuse CPU Usage: 400 ms

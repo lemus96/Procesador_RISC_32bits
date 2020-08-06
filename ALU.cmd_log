@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+netgen -intstyle ise -ar Structure -tm ALU -w -dir netgen/synthesis -ofmt vhdl -sim ALU.ngc ALU_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "ALU.ngc" ALU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ALU_map.ncd ALU.ngd ALU.pcf 
+par -w -intstyle ise -ol high -t 1 ALU_map.ncd ALU.ncd ALU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ALU.twx ALU.ncd -o ALU.twr ALU.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ALU.syr" 

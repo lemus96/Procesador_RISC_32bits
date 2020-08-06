@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/NOR_32.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/NOR_32.syr" 

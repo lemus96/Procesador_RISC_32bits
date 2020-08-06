@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Documents and Settings/Procesador_RISC_32bits/PC_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="pc_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_textio" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/pc_tb/id" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id[15:0]</obj_property>
+      <obj_property name="ObjectShortName">id[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/jt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">jt[31:2]</obj_property>
+      <obj_property name="ObjectShortName">jt[31:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/pcsel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pcsel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pcsel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/pc_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_s[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/pc_inc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_inc[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/pc_offset" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_offset[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/pc_actual" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_actual[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_actual[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/pc_inc_actual" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc_actual[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_inc_actual[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/pc_offset_actual" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_offset_actual[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_offset_actual[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pc_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

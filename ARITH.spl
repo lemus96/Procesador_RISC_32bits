@@ -1,0 +1,10 @@
+[Inputs]
+AFN
+=A[31:0]=
+=B[31:0]=
+[Outputs]
+Z
+V
+N
+=S[31:0]=
+[BiDir]

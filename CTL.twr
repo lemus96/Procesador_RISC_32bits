@@ -1,0 +1,169 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml CTL.twx CTL.ncd -o CTL.twr CTL.pcf
+
+Design file:              CTL.ncd
+Physical constraint file: CTL.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+IRQ            |MWR            |    6.538|
+IRQ            |PCSEL<0>       |    8.053|
+IRQ            |PCSEL<1>       |    7.293|
+IRQ            |PCSEL<2>       |    5.059|
+IRQ            |WASEL          |    8.151|
+IRQ            |WDSEL<0>       |    7.667|
+IRQ            |WDSEL<1>       |    7.321|
+IRQ            |WERF           |    7.055|
+OP<0>          |ALUFN<0>       |    6.751|
+OP<0>          |ALUFN<1>       |    9.875|
+OP<0>          |ALUFN<2>       |    6.857|
+OP<0>          |ALUFN<3>       |    9.437|
+OP<0>          |ALUFN<4>       |    6.513|
+OP<0>          |ALUFN<5>       |    8.584|
+OP<0>          |ASEL           |    7.952|
+OP<0>          |BSEL           |    8.122|
+OP<0>          |MOE            |    8.089|
+OP<0>          |MWR            |    9.553|
+OP<0>          |PCSEL<0>       |    9.094|
+OP<0>          |PCSEL<1>       |    9.070|
+OP<0>          |RA2SEL         |    8.770|
+OP<0>          |WASEL          |    9.127|
+OP<0>          |WDSEL<0>       |    7.273|
+OP<0>          |WDSEL<1>       |    9.156|
+OP<0>          |WERF           |    8.161|
+OP<1>          |ALUFN<0>       |    7.027|
+OP<1>          |ALUFN<1>       |    9.266|
+OP<1>          |ALUFN<2>       |    6.804|
+OP<1>          |ALUFN<3>       |    8.828|
+OP<1>          |ALUFN<4>       |    6.367|
+OP<1>          |ALUFN<5>       |    7.975|
+OP<1>          |ASEL           |    7.343|
+OP<1>          |BSEL           |    6.957|
+OP<1>          |MOE            |    7.738|
+OP<1>          |MWR            |    8.841|
+OP<1>          |PCSEL<0>       |    9.790|
+OP<1>          |PCSEL<1>       |    9.057|
+OP<1>          |RA2SEL         |    8.058|
+OP<1>          |WASEL          |    8.258|
+OP<1>          |WDSEL<0>       |    7.504|
+OP<1>          |WDSEL<1>       |    8.805|
+OP<1>          |WERF           |    7.449|
+OP<2>          |ALUFN<0>       |    7.341|
+OP<2>          |ALUFN<1>       |    9.082|
+OP<2>          |ALUFN<2>       |    7.398|
+OP<2>          |ALUFN<3>       |    8.644|
+OP<2>          |ALUFN<4>       |    6.883|
+OP<2>          |ALUFN<5>       |    7.791|
+OP<2>          |ASEL           |    7.159|
+OP<2>          |BSEL           |    6.982|
+OP<2>          |MOE            |    7.710|
+OP<2>          |MWR            |    9.083|
+OP<2>          |PCSEL<0>       |    9.379|
+OP<2>          |PCSEL<1>       |    8.726|
+OP<2>          |RA2SEL         |    8.300|
+OP<2>          |WASEL          |    7.799|
+OP<2>          |WDSEL<0>       |    6.344|
+OP<2>          |WDSEL<1>       |    8.777|
+OP<2>          |WERF           |    7.691|
+OP<3>          |ALUFN<0>       |    6.946|
+OP<3>          |ALUFN<1>       |    7.517|
+OP<3>          |ALUFN<2>       |    7.264|
+OP<3>          |ALUFN<3>       |    7.875|
+OP<3>          |ALUFN<4>       |    7.173|
+OP<3>          |ALUFN<5>       |    7.249|
+OP<3>          |ASEL           |    7.708|
+OP<3>          |BSEL           |    8.176|
+OP<3>          |MOE            |    7.733|
+OP<3>          |MWR            |    9.996|
+OP<3>          |PCSEL<0>       |   10.337|
+OP<3>          |PCSEL<1>       |    9.603|
+OP<3>          |RA2SEL         |    9.213|
+OP<3>          |WASEL          |    8.775|
+OP<3>          |WDSEL<0>       |    7.619|
+OP<3>          |WDSEL<1>       |    8.800|
+OP<3>          |WERF           |    8.604|
+OP<4>          |ALUFN<1>       |    8.271|
+OP<4>          |ALUFN<3>       |    8.722|
+OP<4>          |ALUFN<4>       |    7.715|
+OP<4>          |ALUFN<5>       |    7.869|
+OP<4>          |ASEL           |    6.948|
+OP<4>          |BSEL           |    7.831|
+OP<4>          |MOE            |    7.011|
+OP<4>          |MWR            |    7.372|
+OP<4>          |PCSEL<0>       |    9.582|
+OP<4>          |PCSEL<1>       |    8.848|
+OP<4>          |RA2SEL         |    6.589|
+OP<4>          |WASEL          |    8.973|
+OP<4>          |WDSEL<1>       |    8.078|
+OP<4>          |WERF           |    6.960|
+OP<5>          |ALUFN<0>       |    8.384|
+OP<5>          |ALUFN<1>       |    8.056|
+OP<5>          |ALUFN<2>       |    8.030|
+OP<5>          |ALUFN<3>       |    8.439|
+OP<5>          |ALUFN<4>       |    8.044|
+OP<5>          |ALUFN<5>       |    7.926|
+OP<5>          |ASEL           |    6.980|
+OP<5>          |BSEL           |    6.794|
+OP<5>          |MOE            |    6.704|
+OP<5>          |MWR            |    6.965|
+OP<5>          |PCSEL<0>       |    9.114|
+OP<5>          |PCSEL<1>       |    8.317|
+OP<5>          |RA2SEL         |    6.182|
+OP<5>          |WASEL          |    9.147|
+OP<5>          |WDSEL<0>       |    7.272|
+OP<5>          |WDSEL<1>       |    7.771|
+OP<5>          |WERF           |    6.867|
+RESET          |MWR            |    5.974|
+Z              |PCSEL<0>       |    7.970|
+Z              |PCSEL<1>       |    7.236|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Aug 05 04:35:59 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 112 MB
+
+
+

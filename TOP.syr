@@ -1,0 +1,849 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/FA.vhd" in Library work.
+Architecture behavioral of Entity fa is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/ADDR_32.vhd" in Library work.
+Architecture behavioral of Entity addr_32 is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/NOR_32.vhd" in Library work.
+Architecture behavioral of Entity nor_32 is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/MUX_4.vhd" in Library work.
+Architecture behavioral of Entity mux_4 is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/SHIFT.vhd" in Library work.
+Architecture behavioral of Entity shift is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/BOOL.vhd" in Library work.
+Architecture behavioral of Entity bool is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/ARITH.vhd" in Library work.
+Architecture behavioral of Entity arith is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/CMP.vhd" in Library work.
+Architecture behavioral of Entity cmp is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/ROM.vhd" in Library work.
+Architecture behavioral of Entity rom is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/RAM_REGS.vhd" in Library work.
+Architecture behavioral of Entity ram_regs is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/REG_D_32.vhd" in Library work.
+Architecture behavioral of Entity reg_d_32 is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/REGFILE.vhd" in Library work.
+Architecture behavioral of Entity regfile is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/CTL.vhd" in Library work.
+Architecture behavioral of Entity ctl is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Documents and Settings/Procesador_RISC_32bits/TOP.vhd" in Library work.
+Architecture behavioral of Entity top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TOP> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REGFILE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CTL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <NOR_32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REG_D_32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADDR_32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RAM_REGS> in library <work> (architecture <behavioral>) with generics.
+	addr_width = 5
+	data_width = 32
+
+Analyzing hierarchy for entity <ROM> in library <work> (architecture <behavioral>) with generics.
+	addr_width = 6
+	data_width = 18
+
+Analyzing hierarchy for entity <SHIFT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BOOL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ARITH> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CMP> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX_4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADDR_32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <NOR_32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <TOP> in library <work> (Architecture <behavioral>).
+Entity <TOP> analyzed. Unit <TOP> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd" line 64: Unconnected output port 'COUT' of component 'ADDR_32'.
+WARNING:Xst:753 - "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd" line 75: Unconnected output port 'COUT' of component 'ADDR_32'.
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <REG_D_32> in library <work> (Architecture <behavioral>).
+Entity <REG_D_32> analyzed. Unit <REG_D_32> generated.
+
+Analyzing Entity <ADDR_32> in library <work> (Architecture <behavioral>).
+Entity <ADDR_32> analyzed. Unit <ADDR_32> generated.
+
+Analyzing Entity <FA> in library <work> (Architecture <behavioral>).
+Entity <FA> analyzed. Unit <FA> generated.
+
+Analyzing Entity <REGFILE> in library <work> (Architecture <behavioral>).
+Entity <REGFILE> analyzed. Unit <REGFILE> generated.
+
+Analyzing generic Entity <RAM_REGS> in library <work> (Architecture <behavioral>).
+	addr_width = 5
+	data_width = 32
+Entity <RAM_REGS> analyzed. Unit <RAM_REGS> generated.
+
+Analyzing Entity <CTL> in library <work> (Architecture <behavioral>).
+Entity <CTL> analyzed. Unit <CTL> generated.
+
+Analyzing generic Entity <ROM> in library <work> (Architecture <behavioral>).
+	addr_width = 6
+	data_width = 18
+Entity <ROM> analyzed. Unit <ROM> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <SHIFT> in library <work> (Architecture <behavioral>).
+Entity <SHIFT> analyzed. Unit <SHIFT> generated.
+
+Analyzing Entity <BOOL> in library <work> (Architecture <behavioral>).
+Entity <BOOL> analyzed. Unit <BOOL> generated.
+
+Analyzing Entity <MUX_4> in library <work> (Architecture <behavioral>).
+Entity <MUX_4> analyzed. Unit <MUX_4> generated.
+
+Analyzing Entity <ARITH> in library <work> (Architecture <behavioral>).
+Entity <ARITH> analyzed. Unit <ARITH> generated.
+
+Analyzing Entity <CMP> in library <work> (Architecture <behavioral>).
+Entity <CMP> analyzed. Unit <CMP> generated.
+
+Analyzing Entity <NOR_32> in library <work> (Architecture <behavioral>).
+Entity <NOR_32> analyzed. Unit <NOR_32> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <NOR_32>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/NOR_32.vhd".
+Unit <NOR_32> synthesized.
+
+
+Synthesizing Unit <REG_D_32>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/REG_D_32.vhd".
+    Found 32-bit register for signal <Q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <REG_D_32> synthesized.
+
+
+Synthesizing Unit <FA>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/FA.vhd".
+Unit <FA> synthesized.
+
+
+Synthesizing Unit <RAM_REGS>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/RAM_REGS.vhd".
+    Found 32x32-bit dual-port RAM <Mram_ram_3_ports> for signal <ram_3_ports>.
+    Found 32x32-bit dual-port RAM <Mram_ram_3_ports_ren> for signal <ram_3_ports>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <RAM_REGS> synthesized.
+
+
+Synthesizing Unit <ROM>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/ROM.vhd".
+WARNING:Xst:1781 - Signal <rom_signal> is used but never assigned. Tied to default value.
+    Found 64x18-bit ROM for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <ROM> synthesized.
+
+
+Synthesizing Unit <SHIFT>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/SHIFT.vhd".
+Unit <SHIFT> synthesized.
+
+
+Synthesizing Unit <CMP>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/CMP.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <Y<0>>.
+    Found 1-bit xor2 for signal <s2>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <CMP> synthesized.
+
+
+Synthesizing Unit <MUX_4>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/MUX_4.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <Y>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX_4> synthesized.
+
+
+Synthesizing Unit <REGFILE>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/REGFILE.vhd".
+Unit <REGFILE> synthesized.
+
+
+Synthesizing Unit <CTL>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/CTL.vhd".
+Unit <CTL> synthesized.
+
+
+Synthesizing Unit <ADDR_32>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/ADDR_32.vhd".
+Unit <ADDR_32> synthesized.
+
+
+Synthesizing Unit <BOOL>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/BOOL.vhd".
+Unit <BOOL> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/PC.vhd".
+WARNING:Xst:646 - Signal <pc_16<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cout2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cout1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit 4-to-1 multiplexer for signal <mux4_out>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <ARITH>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/ARITH.vhd".
+WARNING:Xst:646 - Signal <cout> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit xor2 for signal <xb>.
+Unit <ARITH> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/ALU.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <Y>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <TOP>.
+    Related source file is "C:/Documents and Settings/Procesador_RISC_32bits/TOP.vhd".
+WARNING:Xst:646 - Signal <pc_offset<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit 4-to-1 multiplexer for signal <wdata>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <TOP> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# ROMs                                                 : 1
+ 64x18-bit ROM                                         : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+# Multiplexers                                         : 36
+ 1-bit 4-to-1 multiplexer                              : 33
+ 32-bit 4-to-1 multiplexer                             : 3
+# Xors                                                 : 33
+ 1-bit xor2                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <cascade[31].Full_Adder_i> is unconnected in block <ADDR_32_1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <cascade[31].Full_Adder_i> is unconnected in block <ADDR_32_2>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <RAM_REGS>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram_3_ports> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <WEN>           | high     |
+    |     addrA          | connected to signal <WADDR>         |          |
+    |     diA            | connected to signal <WDATA>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <RADDR1>        |          |
+    |     doB            | connected to signal <DATA1>         |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram_3_ports_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <WEN>           | high     |
+    |     addrA          | connected to signal <WADDR>         |          |
+    |     diA            | connected to signal <WDATA>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <RADDR2>        |          |
+    |     doB            | connected to signal <DATA2>         |          |
+    -----------------------------------------------------------------------
+Unit <RAM_REGS> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 2
+# ROMs                                                 : 1
+ 64x18-bit ROM                                         : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Multiplexers                                         : 36
+ 1-bit 4-to-1 multiplexer                              : 33
+ 32-bit 4-to-1 multiplexer                             : 3
+# Xors                                                 : 33
+ 1-bit xor2                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TOP> ...
+
+Optimizing unit <SHIFT> ...
+
+Optimizing unit <REG_D_32> ...
+
+Optimizing unit <ADDR_32> ...
+
+Optimizing unit <REGFILE> ...
+
+Optimizing unit <CTL> ...
+
+Optimizing unit <BOOL> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <ARITH> ...
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <Program_Counter/REG_D_32_0/Q_0> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Program_Counter/REG_D_32_0/Q_1> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 12.
+Replicating register Program_Counter/REG_D_32_0/Q_31 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_30 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_29 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_28 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_27 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_26 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_25 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_24 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_23 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_22 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_21 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_20 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_19 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_18 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_17 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_16 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_15 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_14 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_13 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_12 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_11 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_10 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_9 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_8 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_7 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_6 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_5 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_4 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_3 to handle IOB=TRUE attribute
+Replicating register Program_Counter/REG_D_32_0/Q_2 to handle IOB=TRUE attribute
+
+FlipFlop Program_Counter/REG_D_32_0/Q_6 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TOP.ngr
+Top Level Output File Name         : TOP
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 165
+
+Cell Usage :
+# BELS                             : 1480
+#      GND                         : 1
+#      LUT2                        : 38
+#      LUT2_D                      : 10
+#      LUT2_L                      : 8
+#      LUT3                        : 291
+#      LUT3_D                      : 47
+#      LUT3_L                      : 5
+#      LUT4                        : 737
+#      LUT4_D                      : 91
+#      LUT4_L                      : 30
+#      MUXCY                       : 16
+#      MUXF5                       : 205
+#      VCC                         : 1
+# FlipFlops/Latches                : 61
+#      FD                          : 59
+#      FDR                         : 2
+# RAMS                             : 128
+#      RAM16X1D                    : 128
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 164
+#      IBUF                        : 66
+#      OBUF                        : 98
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      743  out of   4656    15%  
+ Number of Slice Flip Flops:             31  out of   9312     0%  
+ Number of 4 input LUTs:               1513  out of   9312    16%  
+    Number used as logic:              1257
+    Number used as RAMs:                256
+ Number of IOs:                         165
+ Number of bonded IOBs:                 165  out of    232    71%  
+    IOB Flip Flops:                      30
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 189   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 23.768ns (Maximum Frequency: 42.073MHz)
+   Minimum input arrival time before clock: 27.742ns
+   Maximum output required time after clock: 25.951ns
+   Maximum combinational path delay: 29.925ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 23.768ns (frequency: 42.073MHz)
+  Total number of paths / destination ports: 4651142 / 829
+-------------------------------------------------------------------------
+Delay:               23.768ns (Levels of Logic = 18)
+  Source:            Program_Counter/REG_D_32_0/Q_2_1 (FF)
+  Destination:       Registers_File/Registers/Mram_ram_3_ports2 (RAM)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Program_Counter/REG_D_32_0/Q_2_1 to Registers_File/Registers/Mram_ram_3_ports2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.591   0.987  Program_Counter/REG_D_32_0/Q_2_1 (Program_Counter/REG_D_32_0/Q_2_1)
+     LUT4:I3->O           19   0.704   1.089  Program_Counter/ADDR_32_1/cascade[5].Full_Adder_i/COUT1 (Program_Counter/ADDR_32_1/int_c<5>)
+     LUT4:I3->O            6   0.704   0.669  Program_Counter/ADDR_32_1/cascade[9].Full_Adder_i/COUT1_1 (Program_Counter/ADDR_32_1/cascade[9].Full_Adder_i/COUT1)
+     MUXF5:S->O            2   0.739   0.622  Program_Counter/ADDR_32_2/cascade[10].Full_Adder_i/COUT1_SW1 (N460)
+     LUT3:I0->O            2   0.704   0.482  Program_Counter/ADDR_32_2/cascade[9].Full_Adder_i/COUT1_SW3 (N608)
+     LUT3:I2->O            9   0.704   0.855  Program_Counter/ADDR_32_2/cascade[11].Full_Adder_i/COUT1 (Program_Counter/ADDR_32_2/int_c<11>)
+     LUT3:I2->O           16   0.704   1.038  Program_Counter/ADDR_32_2/cascade[16].Full_Adder_i/COUT1 (Program_Counter/ADDR_32_2/int_c<16>)
+     LUT4:I3->O            6   0.704   0.673  Program_Counter/ADDR_32_2/cascade[22].Full_Adder_i/COUT1 (Program_Counter/ADDR_32_2/int_c<22>)
+     LUT4:I3->O           14   0.704   1.004  a<23>1 (a<23>)
+     LUT4:I3->O            1   0.704   0.000  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[21].Full_Adder_i/COUT1_SW0_SW0_SW1_F (N1141)
+     MUXF5:I0->O           7   0.321   0.743  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[21].Full_Adder_i/COUT1_SW0_SW0_SW1 (N897)
+     LUT3_D:I2->O          1   0.704   0.499  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[21].Full_Adder_i/COUT1_SW0 (N501)
+     LUT3:I1->O            6   0.704   0.704  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[23].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<23>)
+     LUT3_D:I2->O          1   0.704   0.424  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[27].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<27>)
+     LUT4:I3->O            1   0.704   0.000  Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_lut<7> (Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_lut<7>)
+     MUXCY:S->O            1   0.864   0.455  Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_cy<7> (Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_cy<7>)
+     LUT4:I2->O            1   0.704   0.000  Aritmetic_Logic_Unit/Mmux_Y_2_f5_F (N1131)
+     MUXF5:I0->O           2   0.321   0.451  Aritmetic_Logic_Unit/Mmux_Y_2_f5 (MA_0_OBUF)
+     LUT4:I3->O            4   0.704   0.000  Mmux_wdata2 (wdata<0>)
+     RAM16X1D:D                0.381          Registers_File/Registers/Mram_ram_3_ports_ren1
+    ----------------------------------------
+    Total                     23.768ns (13.073ns logic, 10.695ns route)
+                                       (55.0% logic, 45.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4038089 / 1343
+-------------------------------------------------------------------------
+Offset:              27.742ns (Levels of Logic = 21)
+  Source:            ID<31> (PAD)
+  Destination:       Registers_File/Registers/Mram_ram_3_ports2 (RAM)
+  Destination Clock: clk rising
+
+  Data Path: ID<31> to Registers_File/Registers/Mram_ram_3_ports2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            93   1.218   1.456  ID_31_IBUF (ID_31_IBUF)
+     LUT3:I0->O            6   0.704   0.704  Control_Logic/ROM_64x18/Mrom_DATA312111 (Control_Logic/N7)
+     LUT4:I2->O            6   0.704   0.844  Control_Logic/d<4>1 (ra2sel)
+     LUT3:I0->O           64   0.704   1.272  Registers_File/rx<3>1 (Registers_File/rx<3>)
+     RAM16X1D:DPRA3->DPO    1   0.704   0.455  Registers_File/Registers/Mram_ram_3_ports_ren5 (Registers_File/N13)
+     LUT4:I2->O            3   0.704   0.535  Registers_File/RBDATA<2>1 (MWD_2_OBUF)
+     LUT4:I3->O            5   0.704   0.668  Aritmetic_Logic_Unit/Arithmetic_Unit/Mxor_xb<2>_Result1 (Aritmetic_Logic_Unit/Arithmetic_Unit/xb<2>)
+     LUT4:I2->O            2   0.704   0.622  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[2].Full_Adder_i/COUT1_SW1 (N274)
+     LUT3:I0->O            1   0.704   0.455  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[3].Full_Adder_i/COUT1_SW1 (N599)
+     LUT3:I2->O            5   0.704   0.808  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[5].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<5>)
+     LUT3_D:I0->LO         1   0.704   0.135  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[9].Full_Adder_i/COUT1 (N1427)
+     LUT3:I2->O            4   0.704   0.587  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[11].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<11>)
+     MUXF5:S->O            8   0.739   0.932  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[15].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<15>)
+     LUT3:I0->O            7   0.704   0.743  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[19].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<19>)
+     LUT3:I2->O            6   0.704   0.704  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[23].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<23>)
+     LUT3_D:I2->O          1   0.704   0.424  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[27].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<27>)
+     LUT4:I3->O            1   0.704   0.000  Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_lut<7> (Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_lut<7>)
+     MUXCY:S->O            1   0.864   0.455  Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_cy<7> (Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_cy<7>)
+     LUT4:I2->O            1   0.704   0.000  Aritmetic_Logic_Unit/Mmux_Y_2_f5_F (N1131)
+     MUXF5:I0->O           2   0.321   0.451  Aritmetic_Logic_Unit/Mmux_Y_2_f5 (MA_0_OBUF)
+     LUT4:I3->O            4   0.704   0.000  Mmux_wdata2 (wdata<0>)
+     RAM16X1D:D                0.381          Registers_File/Registers/Mram_ram_3_ports_ren1
+    ----------------------------------------
+    Total                     27.742ns (15.491ns logic, 12.251ns route)
+                                       (55.8% logic, 44.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1140745 / 95
+-------------------------------------------------------------------------
+Offset:              25.951ns (Levels of Logic = 18)
+  Source:            Program_Counter/REG_D_32_0/Q_2_1 (FF)
+  Destination:       MA<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Program_Counter/REG_D_32_0/Q_2_1 to MA<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.591   0.987  Program_Counter/REG_D_32_0/Q_2_1 (Program_Counter/REG_D_32_0/Q_2_1)
+     LUT4:I3->O           19   0.704   1.089  Program_Counter/ADDR_32_1/cascade[5].Full_Adder_i/COUT1 (Program_Counter/ADDR_32_1/int_c<5>)
+     LUT4:I3->O            6   0.704   0.669  Program_Counter/ADDR_32_1/cascade[9].Full_Adder_i/COUT1_1 (Program_Counter/ADDR_32_1/cascade[9].Full_Adder_i/COUT1)
+     MUXF5:S->O            2   0.739   0.622  Program_Counter/ADDR_32_2/cascade[10].Full_Adder_i/COUT1_SW1 (N460)
+     LUT3:I0->O            2   0.704   0.482  Program_Counter/ADDR_32_2/cascade[9].Full_Adder_i/COUT1_SW3 (N608)
+     LUT3:I2->O            9   0.704   0.855  Program_Counter/ADDR_32_2/cascade[11].Full_Adder_i/COUT1 (Program_Counter/ADDR_32_2/int_c<11>)
+     LUT3:I2->O           16   0.704   1.038  Program_Counter/ADDR_32_2/cascade[16].Full_Adder_i/COUT1 (Program_Counter/ADDR_32_2/int_c<16>)
+     LUT4:I3->O            6   0.704   0.673  Program_Counter/ADDR_32_2/cascade[22].Full_Adder_i/COUT1 (Program_Counter/ADDR_32_2/int_c<22>)
+     LUT4:I3->O           14   0.704   1.004  a<23>1 (a<23>)
+     LUT4:I3->O            1   0.704   0.000  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[21].Full_Adder_i/COUT1_SW0_SW0_SW1_F (N1141)
+     MUXF5:I0->O           7   0.321   0.743  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[21].Full_Adder_i/COUT1_SW0_SW0_SW1 (N897)
+     LUT3_D:I2->O          1   0.704   0.499  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[21].Full_Adder_i/COUT1_SW0 (N501)
+     LUT3:I1->O            6   0.704   0.704  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[23].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<23>)
+     LUT3_D:I2->O          1   0.704   0.424  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[27].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<27>)
+     LUT4:I3->O            1   0.704   0.000  Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_lut<7> (Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_lut<7>)
+     MUXCY:S->O            1   0.864   0.455  Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_cy<7> (Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_cy<7>)
+     LUT4:I2->O            1   0.704   0.000  Aritmetic_Logic_Unit/Mmux_Y_2_f5_F (N1131)
+     MUXF5:I0->O           2   0.321   0.447  Aritmetic_Logic_Unit/Mmux_Y_2_f5 (MA_0_OBUF)
+     OBUF:I->O                 3.272          MA_0_OBUF (MA<0>)
+    ----------------------------------------
+    Total                     25.951ns (15.260ns logic, 10.691ns route)
+                                       (58.8% logic, 41.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 984779 / 66
+-------------------------------------------------------------------------
+Delay:               29.925ns (Levels of Logic = 21)
+  Source:            ID<31> (PAD)
+  Destination:       MA<0> (PAD)
+
+  Data Path: ID<31> to MA<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            93   1.218   1.456  ID_31_IBUF (ID_31_IBUF)
+     LUT3:I0->O            6   0.704   0.704  Control_Logic/ROM_64x18/Mrom_DATA312111 (Control_Logic/N7)
+     LUT4:I2->O            6   0.704   0.844  Control_Logic/d<4>1 (ra2sel)
+     LUT3:I0->O           64   0.704   1.272  Registers_File/rx<3>1 (Registers_File/rx<3>)
+     RAM16X1D:DPRA3->DPO    1   0.704   0.455  Registers_File/Registers/Mram_ram_3_ports_ren5 (Registers_File/N13)
+     LUT4:I2->O            3   0.704   0.535  Registers_File/RBDATA<2>1 (MWD_2_OBUF)
+     LUT4:I3->O            5   0.704   0.668  Aritmetic_Logic_Unit/Arithmetic_Unit/Mxor_xb<2>_Result1 (Aritmetic_Logic_Unit/Arithmetic_Unit/xb<2>)
+     LUT4:I2->O            2   0.704   0.622  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[2].Full_Adder_i/COUT1_SW1 (N274)
+     LUT3:I0->O            1   0.704   0.455  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[3].Full_Adder_i/COUT1_SW1 (N599)
+     LUT3:I2->O            5   0.704   0.808  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[5].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<5>)
+     LUT3_D:I0->LO         1   0.704   0.135  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[9].Full_Adder_i/COUT1 (N1427)
+     LUT3:I2->O            4   0.704   0.587  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[11].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<11>)
+     MUXF5:S->O            8   0.739   0.932  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[15].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<15>)
+     LUT3:I0->O            7   0.704   0.743  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[19].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<19>)
+     LUT3:I2->O            6   0.704   0.704  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[23].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<23>)
+     LUT3_D:I2->O          1   0.704   0.424  Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/cascade[27].Full_Adder_i/COUT1 (Aritmetic_Logic_Unit/Arithmetic_Unit/Adder_32_Bit/int_c<27>)
+     LUT4:I3->O            1   0.704   0.000  Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_lut<7> (Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_lut<7>)
+     MUXCY:S->O            1   0.864   0.455  Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_cy<7> (Aritmetic_Logic_Unit/Arithmetic_Unit/NOR_32_Inputs/Z_wg_cy<7>)
+     LUT4:I2->O            1   0.704   0.000  Aritmetic_Logic_Unit/Mmux_Y_2_f5_F (N1131)
+     MUXF5:I0->O           2   0.321   0.447  Aritmetic_Logic_Unit/Mmux_Y_2_f5 (MA_0_OBUF)
+     OBUF:I->O                 3.272          MA_0_OBUF (MA<0>)
+    ----------------------------------------
+    Total                     29.925ns (17.678ns logic, 12.247ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 34.05 secs
+ 
+--> 
+
+Total memory usage is 172116 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

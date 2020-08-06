@@ -1,0 +1,3 @@
+vhdl work "ROM.vhd"
+vhdl work "CTL.vhd"
+vhdl work "CTL_tb.vhd"

@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ROM.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ROM.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ROM.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ROM.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ROM.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ROM.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Procesador_RISC_32bits/ROM.xst" -ofn "C:/Documents and Settings/Procesador_RISC_32bits/ROM.syr" 
