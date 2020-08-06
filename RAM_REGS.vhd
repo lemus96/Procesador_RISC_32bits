@@ -21,14 +21,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity RAM_REGS is
-	 Generic( addr_width : integer := 5;
-				 data_width : integer := 32);
+	 Generic ( addr_width : integer := 5;
+			   data_width : integer := 32);
 
     Port ( RADDR1 : in  STD_LOGIC_VECTOR (4 downto 0);
            RADDR2 : in  STD_LOGIC_VECTOR (4 downto 0);
